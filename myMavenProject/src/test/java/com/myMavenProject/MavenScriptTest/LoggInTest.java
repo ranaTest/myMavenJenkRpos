@@ -9,10 +9,12 @@ public class LoggInTest {
 	
 	@Test
 	
-	public void loggin(){
+	public void loggin() throws Throwable{
 		
-	System.setProperty("webdriver.chrome.driver", "");
+	System.setProperty("webdriver.chrome.driver", "H:\\myMavenJenkRpos\\myMavenProject\\src\\test\\resources\\chromedriver.exe");
 	WebDriver driver=new ChromeDriver();
+	driver.get("http://demo.automationtesting.in/Register.html");
+	Thread.sleep(3000);
 	
 	}
 
